@@ -1,0 +1,9 @@
+安装命令行
+sudo npm install mime --save
+
+
+
+npm 安装 第三方插件
+
+1. sudo npm init -y 创建package.json
+2. sudo npm install mime(mime是第三方插件名)

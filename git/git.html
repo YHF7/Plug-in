@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    git仓库指令 如用html要加sudo ssh可不用sudo
+
+    安装配置git
+    git --version
+    git config --global user.name "你的注册用户名"
+    git config --global user.emall "你的注册邮箱"
+
+    创建本地仓库
+    sudo git init
+
+    下载库文件
+    sudo git clone 网址
+
+    查看git库状态
+    sudo git status
+
+    添加到库
+    sudo git add .
+
+    添加上传注释
+    sudo git commit -m ""
+
+    上传到库
+    新建空白库：git push origin master; //origin 为远端仓库的地址，master为你本地的任何想推送的分支。一般不用改
+
+    获取远程仓库的更新,将命令行定位到当前分支：
+
+    git pull;
+    解决完冲突后合并改动：
+
+    git add <filename>
+
+    在合并改动之前，也可以使用如下命令查看：
+
+    git diff <source_branch> <target_branch>
+</body>
+<script></script>
+</html>

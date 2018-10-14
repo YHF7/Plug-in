@@ -1,0 +1,58 @@
+快捷输入代码块
+
+创建添加代码块
+1.快捷键command+shift+p打开然后输入snippet 悬着preferences：openusersnippets配置用户管理代码段
+2.选择你要用在什么文件html就选择html vue就选择vue
+3.输入配置文件
+4.保存
+
+
+案例：
+{
+    这个是系统自动提示文件
+	// Place your snippets for html here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+    这里开始配置
+	"Print to console": {
+		"prefix": "vh",   //这里填写你要用的快捷输入的字符  你输入的是vh那么在html页面打 vh 就然后回车就可以自动补全代码了
+		"body": [ //这里是代码模板输入的地方
+
+			"<!DOCTYPE html>",
+			"<html lang=\"en\">", //在代码模板中如果里面有“”包裹的话就要用到 \"\"这样来书写
+			"<head>",
+				"\t<meta charset=\"UTF-8\">", //前面要空格的话就要用\t
+				"\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+				"\t<meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">",
+				"\t<title>Document</title>",
+				"\t<script src=\"./lib/vue-2.4.0.js\"></script>",
+			"</head>",
+			"<body>",
+				"\t<div id=\"app\">$1</div>", //$1代表的说光标在当前位置显示 可写多个
+			"</body>",
+			
+			"<script>",
+					"\tvar vm = new Vue({",
+						"\t\tel:'#app',",
+						"\t\tdata: {$2},",
+						"\t\tmethods:{$3}",
+					"\t})",
+				"</script>",
+			
+			"</html>"
+
+		],
+		"description": "output end tag(test snippet)"//这一行是代码模板的注解块 一般可以不用修改
+	}
+}

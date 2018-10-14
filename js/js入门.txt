@@ -1,0 +1,81 @@
+1.引入
+alert 弹屏  用于弹出显示
+alert("内部的");
+
+console.log(); 在控制台输出
+
+2.数据类型
+数字型：1
+字符串形："" ''
+布尔形：true或false
+undefined未定义类型
+null 空
+
+typeof：查看变量类型 
+
+3.运算符
++ - * / %
+
+4.关系运算符
+= > <  == ===
+
+5.逻辑运算符
+！ && ||
+非 与 或
+//只要其中一个为false就是false
+true&&false=false
+true&&true=true
+false&&true=false
+//只要其中有一个为true就是true
+true||false=true
+true||true=true
+false||true=true
+false||false=false
+//非true就是false 非false就是true
+!true=false
+!false=true
+
+6.流程语句
+if判断语句
+if（）{
+
+}else{
+
+}
+
+for循环
+for（var i=0 ;a<100;i++）{
+
+}
+
+switch语句
+var a=3;
+switch(a){
+	case 1: console.log("a"); break;
+	default: console.log("没有找到");
+}
+
+while循环
+while（）{
+
+}
+
+do-while循环
+do{
+
+}white（）;
+
+
+
+7.获取元素
+var div =document.querySelector("#d1");  id用. 类名用 # 
+div.innerText='<a href="###">Text改变</a>';//改变DIV里面的内容
+
+8.点击事件
+域名btn 点击控件onclick=function(){
+btn.onclick=function(){
+
+}
+9.移动触发
+//onmouseenter:鼠标移进时触发的事件
+//onmouseleave:鼠标移出时触发的事件

@@ -1,0 +1,16 @@
+开启
+sudo mongod
+
+链接(默认链接本地服务)
+mongo
+
+退出
+exit
+
+基本命令:
+1. show dbs 查看显示所以数据库
+2. db 查看当前链接打数据库
+3. use 数据库名称  切换到指定打数据库（如果没有会新建）
+4. 插入数据
+5. show collections 查看数据集合 
+6. db.students.find() 查看库中所以的数据
